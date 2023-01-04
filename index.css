@@ -1,0 +1,168 @@
+:root {
+    --primary-color: rgb(255, 0, 251);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://i.postimg.cc/fRbtnrv2/ferriss-wheel-sunset-gta-5-nature-8k.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Noto Sans Georgian', sans-serif;
+    display: flex;
+    align-items: center;
+
+}
+
+.main-container {
+    background: rgba(0, 0, 0, 0.596);
+    color: white;
+    width: 500px;
+    height: 600px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.navbar-container {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    padding: 10px;
+}
+
+.navbar-container a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+
+input {
+    width: 250px;
+    text-align: center;
+    height: 25px;
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.578);
+    border-radius: 4px;
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+input:focus {
+    border-bottom: 3px solid rgb(255, 0, 251);
+}
+
+.button-login {
+    text-align: center;
+}
+
+.button-container {
+    text-align: center;
+    padding: 4px;
+    display: block;
+}
+
+#login {
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    font-size: medium;
+    background: none;
+    border: 1px solid rgb(255, 0, 251);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+
+}
+
+@keyframes buttonshake {
+    0% {
+        transform: rotateZ(5deg);
+    }
+
+    50% {
+        transform: rotateZ(-5deg);
+    }
+
+    75% {
+        transform: rotateZ(5deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+#login:hover {
+    background: rgb(255, 0, 251);
+    border: none;
+    color: white;
+    box-shadow: 0px 0px 30px rgb(255, 0, 251);
+    animation-name: buttonshake;
+    animation-duration: 0.4s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+#forgot {
+    text-decoration: none;
+    font-size: large;
+    color: white;
+}
+
+#forgot:hover {
+    text-decoration: underline;
+}
+
+#logo-animation {
+    animation-name: logoanimation;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logoanimation {
+    from {
+        transform: rotateY(20deg);
+    }
+
+    to {
+        transform: rotateY(-20deg);
+    }
+}
+
+.inputs {
+    margin-top: 20px;
+}
+
+
+.navbar-buttons {
+    transition: 0.4s;
+}
+
+.navbar-buttons a:hover {
+    background: rgba(0, 0, 0, 0.605);
+    border-radius: 6px;
+    transition: 0.5s;
+    text-shadow: 0px 0px 10px var(--primary-color);
+}
