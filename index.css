@@ -10,13 +10,16 @@
 }
 
 body {
-    background-image: url(https://i.postimg.cc/fRbtnrv2/ferriss-wheel-sunset-gta-5-nature-8k.jpg);
+    background-image: url(https://i.postimg.cc/sxtd9fNy/beest.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Noto Sans Georgian', sans-serif;
     position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 #btn-background{
@@ -37,7 +40,6 @@ body {
     height: 600px;
     border-radius: 10px;
     margin: auto;
-    margin-top: 70px;
 }
 
 .navbar-container {
@@ -260,3 +262,4 @@ input:valid + label {
         animation-iteration-count: 1;
         font-size: medium;
 }
+
