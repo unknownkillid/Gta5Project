@@ -1,4 +1,4 @@
 # Gta5Project 
 
 # This forms made by Dante.
-# Owner is Roayl Role Play. RageMP Server.
+# Owner is Royal Role Play. RageMP Server.
