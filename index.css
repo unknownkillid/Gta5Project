@@ -6,6 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 body {
@@ -68,9 +69,11 @@ input {
     margin-top: 30px;
 }
 
-input:focus {
+input:focus,
+input:valid {
     border-bottom: 3px solid rgb(255, 0, 251);
 }
+
 
 .button-login {
     text-align: center;
@@ -182,7 +185,8 @@ label {
     transition: 0.6s;
 }
 
-input:focus + label {
+input:focus + label,
+input:valid + label {
     top: 14px;
     font-size: small;
 }
