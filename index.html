@@ -21,29 +21,28 @@
                 <div class="navbar-container">
                     <div class="navbar-buttons">
                         <div id="btn-background"></div>
-                        <a href="#" id="login-page" onclick="backgroundMoveBack()">ავტორიზაცია</a>
-                        <a href="#" id="register-page" onclick="backgroundMoveAnimation()">რეგისტრაცია</a>
+                        <a href="#" id="login-page" onclick="backgroundMoveBack(), bodyContainerDisplay()">ავტორიზაცია</a>
+                        <a href="#" id="register-page" onclick="backgroundMoveAnimation(), registerContainerDisplay()">რეგისტრაცია</a>
                     </div>
                 </div>
             </nav>
         </header>
 
-        <div class="body-container">
+        <div id="body-container">
             <img src="https://i.postimg.cc/44B93cxF/giphy-2.gif" width="120px" class="main-logo" id="logo-animation"
                 alt="">
 
-            
-                <div class="input1">
-                    
-                    <input type="text" id="input-one" required>
-                    <label for="input-one">მომხმარებელი</label>
-                </div>
 
-                <div class="input1">
-                    <input type="password" id="input-two" required>
-                    <label id="label-two">პაროლი</label>
-                </div>
-            
+            <div class="input1">
+                <input type="text" id="input-one" required>
+                <label for="input-one">მომხმარებელი</label>
+            </div>
+
+            <div class="input1">
+                <input type="password" id="input-two" required>
+                <label id="label-two">პაროლი</label>
+            </div>
+
             <div class="button-login">
                 <br>
                 <div class="button-container">
@@ -54,6 +53,39 @@
                 </div>
             </div>
         </div>
+
+
+        <div id="register-container">
+            <img src="https://i.postimg.cc/44B93cxF/giphy-2.gif" width="120px" class="main-logo" id="logo-animation"
+                alt="">
+
+
+            <div class="register-inputs">
+                <div class="input1">
+                    <input type="text" id="input-one" required>
+                    <label for="input-one">მომხმარებელი</label>
+                </div>
+                <div class="input1">
+                    <input type="text" id="input-one" required>
+                    <label for="input-one">მეილი</label>
+                </div>
+                <div class="input1">
+                    <input type="password" id="input-one" required>
+                    <label for="input-one">პაროლი</label>
+                </div>
+                <div class="input1">
+                    <input type="password" id="input-one" required>
+                    <label for="input-one">გაიმეორეთ პაროლი</label>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <br> <button id="register-btn">რეგისტრაცია</button>
+            </div>
+
+        </div>
+
+
     </div>
 
     <script src="index.js"></script>
