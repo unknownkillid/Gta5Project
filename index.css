@@ -22,7 +22,7 @@ body {
     align-items: center;
 }
 
-#btn-background{
+#btn-background {
     background: #ff00b7;
     width: 150px;
     height: 46px;
@@ -195,22 +195,42 @@ input:valid {
 label {
     position: absolute;
     top: 33px;
-    left: 0;
+    left: 10px;
     transition: 0.6s;
     cursor: pointer;
 }
 
-input:focus + label,
-input:valid + label {
+input:focus+label,
+input:valid+label {
     top: 14px;
     font-size: small;
+    left: -10px;
+}
+
+input:focus+label i,
+input:valid+label i {
+    animation-name: animationopacity;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes animationopacity{
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
 }
 
 
 
 /* რეგისტრაცია ================================= */
 
-#register-container{
+#register-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -218,7 +238,7 @@ input:valid + label {
     display: none;
 }
 
-@keyframes containershake{
+@keyframes containershake {
     0% {
         transform: rotateZ(5deg);
     }
@@ -236,7 +256,7 @@ input:valid + label {
     }
 }
 
-#register-btn{
+#register-btn {
     width: 100px;
     height: 40px;
     font-size: small;
@@ -248,18 +268,29 @@ input:valid + label {
     margin-top: 20px;
 }
 
-#register-btn:hover{
-        background: rgb(255, 0, 251);
-        border: none;
-        color: white;
-        box-shadow: 0 0 5px var(--primary-color),
-            0 0 25px var(--primary-color),
-            0 0 50px var(--primary-color),
-            0 0 100px var(--primary-color);
-        animation-name: buttonshake;
-        animation-duration: 0.4s;
-        animation-delay: 0s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1;
-        font-size: medium;
+#register-btn:hover {
+    background: rgb(255, 0, 251);
+    border: none;
+    color: white;
+    box-shadow: 0 0 5px var(--primary-color),
+        0 0 25px var(--primary-color),
+        0 0 50px var(--primary-color),
+        0 0 100px var(--primary-color);
+    animation-name: buttonshake;
+    animation-duration: 0.4s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    font-size: medium;
+}
+
+
+#hacker {
+    font-size: larger;
+    margin-right: 10px;
+}
+
+#nickname {
+    font-size: larger;
+    margin-right: 10px;
 }

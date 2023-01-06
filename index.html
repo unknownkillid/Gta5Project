@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -21,8 +24,10 @@
                 <div class="navbar-container">
                     <div class="navbar-buttons">
                         <div id="btn-background"></div>
-                        <a href="#" id="login-page" onclick="backgroundMoveBack(), bodyContainerDisplay()">ავტორიზაცია</a>
-                        <a href="#" id="register-page" onclick="backgroundMoveAnimation(), registerContainerDisplay()">რეგისტრაცია</a>
+                        <a href="#" id="login-page"
+                            onclick="backgroundMoveBack(), bodyContainerDisplay()">ავტორიზაცია</a>
+                        <a href="#" id="register-page"
+                            onclick="backgroundMoveAnimation(), registerContainerDisplay()">რეგისტრაცია</a>
                     </div>
                 </div>
             </nav>
@@ -35,12 +40,12 @@
 
             <div class="input1">
                 <input type="text" id="input-one" required>
-                <label for="input-one">მომხმარებელი</label>
+                <label for="input-one" class="label-one"><i class="fa-solid fa-user" id="nickname"></i>მომხმარებელი</label>
             </div>
 
             <div class="input1">
                 <input type="password" id="input-two" required>
-                <label for="input-two">პაროლი</label>
+                <label for="input-two" class="label-two"><i class="fa-solid fa-user-secret" id="hacker"></i>პაროლი</label>
             </div>
 
             <div class="button-login">
@@ -63,19 +68,19 @@
             <div class="register-inputs">
                 <div class="input1">
                     <input type="text" id="input-three" required>
-                    <label for="input-three">მომხმარებელი</label>
+                    <label for="input-three"><i class="fa-solid fa-user" id="nickname"></i>მომხმარებელი</label>
                 </div>
                 <div class="input1">
                     <input type="text" id="input-four" required>
-                    <label for="input-four">მეილი</label>
+                    <label for="input-four"><i class="fa-solid fa-envelope" id="nickname"></i>მეილი</label>
                 </div>
                 <div class="input1">
                     <input type="password" id="input-five" required>
-                    <label for="input-five">პაროლი</label>
+                    <label for="input-five"><i class="fa-solid fa-user-secret" id="hacker"></i>პაროლი</label>
                 </div>
                 <div class="input1">
                     <input type="password" id="input-six" required>
-                    <label for="input-six">გაიმეორეთ პაროლი</label>
+                    <label for="input-six"><i class="fa-solid fa-user-secret" id="hacker"></i>გაიმეორეთ პაროლი</label>
                 </div>
             </div>
 

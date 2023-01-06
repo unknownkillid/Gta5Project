@@ -4,6 +4,9 @@ let loginButton = document.getElementById('login-page');
 let position = backgroundMove.style.left = '0px';
 let bodyContainer = document.getElementById('body-container');
 let registerContainer = document.getElementById('register-container');
+let labelIconNickname = document.getElementById('nickname');
+let labelIconHacker = document.getElementById('hacker');
+
 
 function backgroundMoveAnimation(){
     if (registerButton.focus){
