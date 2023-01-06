@@ -197,6 +197,7 @@ label {
     top: 33px;
     left: 0;
     transition: 0.6s;
+    cursor: pointer;
 }
 
 input:focus + label,
@@ -262,4 +263,3 @@ input:valid + label {
         animation-iteration-count: 1;
         font-size: medium;
 }
-
