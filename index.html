@@ -18,6 +18,7 @@
 <body>
 
 
+
     <div class="main-container">
         <header>
             <nav>
@@ -34,37 +35,68 @@
         </header>
 
         <div id="body-container">
-            <img src="https://i.postimg.cc/XqQf5XH1/giphy-3.gif" width="120px" class="main-logo" id="logo-animation"
-                alt="">
+            <a href="#">
+                <span class="first-child" id="first"></span>
+                <span class="second-child" id="second"></span>
+                <span class="thrid-child" id="thrid"></span>
+                <span class="nth-child" id="nth"></span>
+            </a>
 
-
-            <div class="input1">
-                <input type="text" id="input-one" required>
-                <label for="input-one" class="label-one"><i class="fa-solid fa-user" id="nickname"></i>მომხმარებელი</label>
+            <div class="logo-container">
+                <img src="https://i.postimg.cc/K8QXrMSh/MAIN-LOGCHo.png" width="180px" class="main-logo"
+                    id="logo-animation" alt="">
             </div>
 
-            <div class="input1">
-                <input type="password" id="input-two" required>
-                <label for="input-two" class="label-two"><i class="fa-solid fa-user-secret" id="hacker"></i>პაროლი</label>
-            </div>
+            <form action="" method="POST">
 
-            <div class="button-login">
-                <br>
-                <div class="button-container">
-                    <br> <button id="login">შესვლა</button>
-                </div>
-                <div class="password-upgrade">
-                    <br><a href="#" id="forgot">პაროლის აღდგენა</a>
-                </div>
-            </div>
+                <div class="all-inputs">
+                    <div class="input1">
+                        <input type="text" id="input-one" required>
+                        <label for="input-one" class="label-one"><i class="fa-solid fa-user"
+                                id="nickname"></i>მომხმარებელი</label>
+                    </div>
+
+                    <div class="input1">
+                        <input type="password" id="input-two" required>
+                        <label for="input-two" class="label-two"><i class="fa-solid fa-user-secret"
+                                id="hacker"></i>პაროლი</label>
+                    </div>
+
+                    <div class="button-login">
+
+                        <br>
+                        <div class="button-container">
+                            <br> <button type="submit" onclick="buttonFunction(event)" id="login">შესვლა</button>
+                        </div>
+
+                        <div class="password-upgrade">
+                            <br><a href="#" id="forgot">პაროლის აღდგენა</a>
+                        </div>
+                    </div>
+
+            </form>
+
         </div>
 
 
-        <div id="register-container">
-            <img src="https://i.postimg.cc/XqQf5XH1/giphy-3.gif" width="120px" class="main-logo" id="logo-animation"
+    </div>
+
+
+    <div id="register-container">
+
+        <a href="#">
+            <span class="child-reg1" id="first"></span>
+            <span class="child-reg4" id="second"></span>
+            <span class="child-reg2" id="thrid"></span>
+            <span class="child-reg3" id="nth"></span>
+        </a>
+
+        <div class="logo-container">
+            <img src="https://i.postimg.cc/K8QXrMSh/MAIN-LOGCHo.png" width="160px" class="reg-logo" id="logo-animation"
                 alt="">
+        </div>
 
-
+        <form action="" method="POST">
             <div class="register-inputs">
                 <div class="input1">
                     <input type="text" id="input-three" required>
@@ -85,11 +117,12 @@
             </div>
 
             <div class="button-container">
-                <br> <button id="register-btn">რეგისტრაცია</button>
+                <br> <button id="register-btn" type="submit" onclick="buttonFunction(event)">რეგისტრაცია</button>
             </div>
 
-        </div>
+        </form>
 
+    </div>
 
     </div>
 

@@ -23,7 +23,7 @@ body {
 }
 
 #btn-background {
-    background: #ff00b7;
+    background: #ff5ad0;
     width: 150px;
     height: 46px;
     position: absolute;
@@ -34,12 +34,13 @@ body {
 }
 
 .main-container {
-    background: rgba(0, 0, 0, 0.596);
+    background: rgba(0, 0, 0, 0.595);
     color: white;
     width: 500px;
     height: 600px;
-    border-radius: 10px;
     margin: auto;
+    position: relative;
+    overflow: hidden;
 }
 
 .navbar-container {
@@ -64,6 +65,7 @@ body {
     padding: 20px;
     align-items: center;
     transition: 1s;
+    position: relative;
 }
 
 input {
@@ -161,18 +163,15 @@ input:valid {
 
 #logo-animation {
     animation-name: logoanimation;
-    animation-duration: 2s;
+    animation-duration: 5s;
     animation-delay: 0s;
     animation-iteration-count: infinite;
+    animation-fill-mode: both;
 }
 
 @keyframes logoanimation {
-    from {
-        transform: rotateY(20deg);
-    }
-
-    to {
-        transform: rotateY(-20deg);
+    100% {
+        transform: rotateY(360deg);
     }
 }
 
@@ -216,7 +215,7 @@ input:valid+label i {
     animation-iteration-count: 1;
 }
 
-@keyframes animationopacity{
+@keyframes animationopacity {
     from {
         opacity: 1;
     }
@@ -293,4 +292,218 @@ input:valid+label i {
 #nickname {
     font-size: larger;
     margin-right: 10px;
+}
+
+.logo-container {
+    height: 150px;
+}
+
+.main-container a span {
+    position: absolute;
+    display: block;
+    width: 27%;
+    height: 4px;
+    background: linear-gradient(150deg, transparent, rgb(255, 0, 149));
+}
+
+.first-child {
+    position: absolute;
+    top: -17.8%;
+    left: 5%;
+    /* box-shadow: 0px 0px 10px rgb(226, 43, 180),
+        0px 0px 20px rgb(226, 43, 180),
+        0px 0px 30px rgb(226, 43, 180),
+        0px 0px 40px rgb(226, 43, 180); */
+    animation-name: firstchildanimation;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+}
+
+@keyframes firstchildanimation {
+    0% {
+        left: -30%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+.second-child {
+    position: absolute;
+    top: -30%;
+    left: 86.2%;
+    /* box-shadow: 0px 0px 10px blueviolet,
+        0px 0px 20px blueviolet,
+        0px 0px 30px blueviolet,
+        0px 0px 40px blueviolet; */
+    animation-name: secondchildanimation;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    transform: rotateZ(90deg);
+}
+
+@keyframes secondchildanimation {
+    0% {
+        top: -35%;
+    }
+
+    100% {
+        top: 130%;
+    }
+}
+
+.thrid-child {
+    position: absolute;
+    top: 115.3%;
+    left: 105%;
+    transform: rotateZ(180deg);
+    /* box-shadow: 0px 0px 10px rgb(226, 43, 180),
+        0px 0px 20px rgb(226, 43, 180),
+        0px 0px 30px rgb(226, 43, 180),
+        0px 0px 40px rgb(226, 43, 180); */
+    animation-name: thridchildanimation;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes thridchildanimation {
+    0% {
+        left: 102%;
+    }
+
+    100% {
+        left: -30%;
+    }
+}
+
+.nth-child {
+    position: absolute;
+    top: 100%;
+    left: -13%;
+    transform: rotateZ(-90deg);
+    /* box-shadow: 0px 0px 10px rgb(226, 43, 180),
+        0px 0px 20px rgb(226, 43, 180),
+        0px 0px 30px rgb(226, 43, 180),
+        0px 0px 40px rgb(226, 43, 180); */
+    animation-name: nthchildanimation;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes nthchildanimation {
+    0% {
+        top: 130%;
+    }
+
+    100% {
+        top: -35%;
+    }
+}
+
+.child-reg1 {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    /* box-shadow: 0px 0px 10px rgb(226, 43, 180),
+        0px 0px 20px rgb(226, 43, 180),
+        0px 0px 30px rgb(226, 43, 180),
+        0px 0px 40px rgb(226, 43, 180); */
+    animation-name: first;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+}
+
+@keyframes first {
+    0% {
+        left: -30%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+
+.child-reg2 {
+    position: absolute;
+    top: 99.3%;
+    left: 105%;
+    transform: rotateZ(180deg);
+    /* box-shadow: 0px 0px 10px rgb(226, 43, 180),
+        0px 0px 20px rgb(226, 43, 180),
+        0px 0px 30px rgb(226, 43, 180),
+        0px 0px 40px rgb(226, 43, 180); */
+    animation-name: thrid;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes thrid {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: -30%;
+    }
+}
+
+.child-reg4 {
+    position: absolute;
+    top: -20%;
+    left: 86.2%;
+    /* box-shadow: 0px 0px 10px blueviolet,
+        0px 0px 20px blueviolet,
+        0px 0px 30px blueviolet,
+        0px 0px 40px blueviolet; */
+    animation-name: child4;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    transform: rotateZ(90deg);
+}
+
+@keyframes child4 {
+    0% {
+        top: -14%;
+    }
+
+    100% {
+        top: 130%;
+    }
+}
+
+
+.child-reg3 {
+    position: absolute;
+    top: 100%;
+    left: -13%;
+    transform: rotateZ(-90deg);
+    /* box-shadow: 0px 0px 10px rgb(226, 43, 180),
+        0px 0px 20px rgb(226, 43, 180),
+        0px 0px 30px rgb(226, 43, 180),
+        0px 0px 40px rgb(226, 43, 180); */
+    animation-name: child3;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes child3 {
+    0% {
+        top: 110%;
+    }
+
+    100% {
+        top: -14%;
+    }
 }
