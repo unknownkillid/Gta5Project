@@ -318,7 +318,7 @@ input:valid+label i {
     animation-delay: 0s;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
-    animation-duration: 5s;
+    animation-duration: 1s;
 }
 
 @keyframes firstchildanimation {
@@ -342,7 +342,7 @@ input:valid+label i {
     animation-name: secondchildanimation;
     animation-delay: 0s;
     animation-iteration-count: infinite;
-    animation-duration: 5s;
+    animation-duration: 1s;
     transform: rotateZ(90deg);
 }
 
@@ -368,7 +368,7 @@ input:valid+label i {
     animation-name: thridchildanimation;
     animation-delay: 0s;
     animation-iteration-count: infinite;
-    animation-duration: 5s;
+    animation-duration: 1s;
 }
 
 @keyframes thridchildanimation {
@@ -393,7 +393,7 @@ input:valid+label i {
     animation-name: nthchildanimation;
     animation-delay: 0s;
     animation-iteration-count: infinite;
-    animation-duration: 5s;
+    animation-duration: 1s;
 }
 
 @keyframes nthchildanimation {
@@ -418,7 +418,7 @@ input:valid+label i {
     animation-delay: 0s;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
-    animation-duration: 5s;
+    animation-duration: 1s;
 }
 
 @keyframes first {
@@ -444,7 +444,7 @@ input:valid+label i {
     animation-name: thrid;
     animation-delay: 0s;
     animation-iteration-count: infinite;
-    animation-duration: 5s;
+    animation-duration: 1s;
 }
 
 @keyframes thrid {
@@ -468,7 +468,7 @@ input:valid+label i {
     animation-name: child4;
     animation-delay: 0s;
     animation-iteration-count: infinite;
-    animation-duration: 5s;
+    animation-duration: 1s;
     transform: rotateZ(90deg);
 }
 
@@ -495,7 +495,7 @@ input:valid+label i {
     animation-name: child3;
     animation-delay: 0s;
     animation-iteration-count: infinite;
-    animation-duration: 5s;
+    animation-duration: 1s;
 }
 
 @keyframes child3 {
