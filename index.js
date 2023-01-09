@@ -37,7 +37,7 @@ function registerContainerDisplay(){
 
 function buttonFunction(e){
     e.preventDefault();
-    console.log("test");
+    console.log("Enter working");
 }
 
 

@@ -303,7 +303,7 @@ input:valid+label i {
     display: block;
     width: 27%;
     height: 4px;
-    background: linear-gradient(150deg, transparent, rgb(255, 0, 149));
+    background: linear-gradient(150deg, transparent, #ffc000);
 }
 
 .first-child {
